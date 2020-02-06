@@ -1,7 +1,11 @@
 # Kill-Process
-I made this quick script as a solution to be able to quickly and easily search, and bulk kill processes in windows. Nothing special, but I do use this every time I need to kill a process
+I made this quick script as a solution to be able to quickly and easily search, and bulk kill processes in windows. Nothing special, but I do use this every time I need to kill a process.
  
  It behaves best when it is ran in a directory linked to the PATH envronment variable.
+ 
+ * Installation:
+      * Create new, empty directory
+      * Add directory to windows PATH environment variable
  
  * Usage: 
       * run the command: **kill-process**
