@@ -11,7 +11,7 @@
 
 function kill-process() {
   $processes = get-process | Get-Unique | select Name,Company,Description,Responding,Path #gets all running processes
-  $proc = $processes | Out-Gridview -PassThru #passthru flag added to allow for killing of more than one process
+  $proc = $processes | Out-Gridview -PassThru -Title "Process Killer" #passthru flag added to allow for killing of more than one process
   ForEach ($p in $proc.Name){
     taskkill /im $p".exe" /f
   }
